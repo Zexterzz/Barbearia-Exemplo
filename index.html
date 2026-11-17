@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Barbearia Navalha de Ouro</title>
+  <meta name="description" content="Barbearia com corte, barba e sobrancelha. Agende seu horário pelo WhatsApp.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- MENU -->
+  <header class="topo" id="topo">
+    <div class="container topo-conteudo">
+      <a href="#inicio" class="logo">Navalha <span>de Ouro</span></a>
+
+      <!-- AQUI ESTÁ A NAVBAR, ENTÃO A NAVEGAÇÃO ESTA POR AQUI -->
+      <nav class="menu" id="menu">
+        <a href="#servicos">Serviços</a>
+        <a href="#sobre">A barbearia</a>
+        <a href="#equipe">Equipe</a>
+        <a href="#depoimentos">Clientes</a>
+        <a href="#agendar" class="btn btn-pequeno">Agendar</a>
+      </nav>
+
+      <!-- AQUI É O MENU PARA O CELULAR (RESPONSIVO) -->
+      <button class="botao-menu" id="botaoMenu" aria-label="Abrir menu">Menu</button>
+    </div>
+  </header>
+
+  <!-- INÍCIO -->
+  <section class="hero" id="inicio">
+    <div class="container hero-conteudo">
+      <h1>Corte e barba<br>com <span>hora marcada.</span></h1>
+      <p class="hero-texto">Atendemos desde 2015 no centro da cidade. Escolha o serviço e o horário aqui no site, e a confirmação sai pelo WhatsApp.</p>
+      <div class="hero-botoes">
+        <a href="#agendar" class="btn">Agendar horário</a>
+        <a href="#servicos" class="btn btn-borda">Ver preços</a>
+      </div>
+    </div>
+    <div class="poste" aria-hidden="true"></div>
+  </section>
+
+  <!-- SERVIÇOS -->
+  <section class="secao" id="servicos">
+    <div class="container">
+      <h2>Serviços e preços</h2>
+
+      <div class="cards">
+        <div class="card reveal">
+          <h3>Corte masculino</h3>
+          <p>Tesoura ou máquina, do jeito que você pedir.</p>
+          <p class="preco">R$ 45</p>
+          <button class="btn btn-borda btn-servico" data-servico="Corte masculino">Agendar</button>
+        </div>
+
+        <div class="card reveal">
+          <h3>Barba</h3>
+          <p>Toalha quente e acabamento na navalha.</p>
+          <p class="preco">R$ 35</p>
+          <button class="btn btn-borda btn-servico" data-servico="Barba">Agendar</button>
+        </div>
+
+        <div class="card reveal">
+          <h3>Corte e barba</h3>
+          <p>Os dois serviços na mesma cadeira.</p>
+          <p class="preco">R$ 70</p>
+          <button class="btn btn-borda btn-servico" data-servico="Corte e barba">Agendar</button>
+        </div>
+
+        <div class="card reveal">
+          <h3>Degradê na navalha</h3>
+          <p>Acabamento feito à mão, sem pressa.</p>
+          <p class="preco">R$ 55</p>
+          <button class="btn btn-borda btn-servico" data-servico="Degradê na navalha">Agendar</button>
+        </div>
+
+        <div class="card reveal">
+          <h3>Pigmentação</h3>
+          <p>Para cobrir falhas na barba ou no cabelo.</p>
+          <p class="preco">R$ 40</p>
+          <button class="btn btn-borda btn-servico" data-servico="Pigmentação">Agendar</button>
+        </div>
+
+        <div class="card reveal">
+          <h3>Sobrancelha</h3>
+          <p>Só para limpar, sem exagero.</p>
+          <p class="preco">R$ 15</p>
+          <button class="btn btn-borda btn-servico" data-servico="Sobrancelha">Agendar</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE -->
+  <section class="secao secao-escura" id="sobre">
+    <div class="container sobre-grade">
+      <div class="sobre-visual reveal">
+        <div class="moldura">
+          <strong>2015</strong>
+          <p>Desde a abertura</p>
+        </div>
+      </div>
+
+      <div class="reveal">
+        <h2>A barbearia</h2>
+        <p>A Navalha de Ouro abriu com duas cadeiras e hoje tem três barbeiros. O foco continua o mesmo: corte bem feito, horário respeitado e um lugar tranquilo para esperar.</p>
+        <p>Trabalhamos só com agendamento, por isso você não perde tempo em fila. Todo o material é esterilizado a cada cliente.</p>
+        <ul class="lista">
+          <li>Ambiente climatizado</li>
+          <li>Atendimento só com hora marcada</li>
+          <li>Barbeiros com mais de 5 anos de experiência</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- EQUIPE -->
+  <section class="secao" id="equipe">
+    <div class="container">
+      <h2>Equipe</h2>
+
+      <div class="cards">
+        <div class="card reveal">
+          <div class="avatar">R</div>
+          <h3>Rafael</h3>
+          <p>Degradê e barba. Está na casa desde a abertura.</p>
+        </div>
+        <div class="card reveal">
+          <div class="avatar">M</div>
+          <h3>Marcos</h3>
+          <p>Corte clássico na tesoura e acabamento na navalha.</p>
+        </div>
+        <div class="card reveal">
+          <div class="avatar">J</div>
+          <h3>João</h3>
+          <p>Cortes modernos e pigmentação.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEPOIMENTOS DOS CLIENTES -->
+  <section class="secao secao-escura" id="depoimentos">
+    <div class="container">
+      <h2>O que os clientes dizem</h2>
+
+      <div class="cards">
+        <div class="card reveal">
+          <p>Agendei pelo WhatsApp em um minuto e o horário foi respeitado. A barba ficou como eu pedi.</p>
+          <strong>Pedro H.</strong>
+        </div>
+        <div class="card reveal">
+          <p>Venho há três anos. Nunca precisei esperar e nunca saí com o corte errado.</p>
+          <strong>Lucas M.</strong>
+        </div>
+        <div class="card reveal">
+          <p>Ambiente calmo e atendimento direto, sem enrolação.</p>
+          <strong>André S.</strong>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AGENDAMENTO -->
+  <section class="secao" id="agendar">
+    <div class="container agenda-grade">
+      <div class="reveal">
+        <h2>Agende seu horário</h2>
+        <p>Preencha os campos e clique no botão. O WhatsApp da barbearia vai abrir com a mensagem pronta, é só enviar. A gente responde para confirmar o horário.</p>
+
+        <div class="info">
+          <p><strong>Endereço</strong><br>Rua Exemplo, 123, Centro</p>
+          <p><strong>Horário</strong><br>Segunda a sexta, 9h às 20h<br>Sábado, 9h às 18h</p>
+          <p><strong>WhatsApp</strong><br>(11) 996081-0254</p>
+        </div>
+      </div>
+
+      <form class="formulario reveal" id="formulario">
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" placeholder="Seu nome">
+
+        <label for="servico">Serviço</label>
+        <select id="servico">
+          <option value="">Escolha um serviço</option>
+          <option>Corte masculino</option>
+          <option>Barba</option>
+          <option>Corte e barba</option>
+          <option>Degradê na navalha</option>
+          <option>Pigmentação</option>
+          <option>Sobrancelha</option>
+        </select>
+
+        <label for="barbeiro">Barbeiro</label>
+        <select id="barbeiro">
+          <option>Qualquer um</option>
+          <option>Rafael</option>
+          <option>Marcos</option>
+          <option>João</option>
+        </select>
+
+        <div class="linha">
+          <div>
+            <label for="data">Data</label>
+            <input type="date" id="data">
+          </div>
+          <div>
+            <label for="hora">Horário</label>
+            <select id="hora">
+              <option value="">Escolha</option>
+              <option>09:00</option>
+              <option>10:00</option>
+              <option>11:00</option>
+              <option>12:00</option>
+              <option>13:00</option>
+              <option>14:00</option>
+              <option>15:00</option>
+              <option>16:00</option>
+              <option>17:00</option>
+              <option>18:00</option>
+              <option>19:00</option>
+            </select>
+          </div>
+        </div>
+
+        <p class="erro" id="erro"></p>
+
+        <button type="submit" class="btn btn-whats">Enviar pelo WhatsApp</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- RODAPÉ -->
+  <footer class="rodape">
+    <div class="container rodape-conteudo">
+      <p>Navalha de Ouro</p>
+      <p>&copy; <span id="ano"></span> Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Botão fixo do WhatsApp -->
+  <a href="#" class="whats-fixo" id="whatsFlutuante">WhatsApp</a>
+
+  <script src="script.js"></script>
+</body>
+</html>
